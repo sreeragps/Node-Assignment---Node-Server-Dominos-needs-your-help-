@@ -19,7 +19,8 @@ function handleServer(req, res) {
         res.end('');
     }else{
         res.writeHead(404, {'content-type': 'text/html'});
-        res.end('');
+        
     }    
 }
 httpServer.listen(8081);
+module.exports = httpServer;
