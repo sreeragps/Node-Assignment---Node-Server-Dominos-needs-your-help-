@@ -7,7 +7,7 @@ function handleServer(req, res) {
     var q = url.parse(req.url);
     var x=q.pathname;
     if(x=="/welcome"){
-        res.writeHead(200, {'Content-Type': 'text/html'});
+        res.writeHead(200, {'Content-Type': 'text/plain'});
         res.write('Welcome to Dominos!');
         res.end('');
     }else if(x=="/contact"){
